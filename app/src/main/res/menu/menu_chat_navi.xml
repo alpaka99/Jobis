@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_1"
+        android:title="일정관리"
+        android:icon="@drawable/ic_calendar"/>
+
+    <item
+        android:id="@+id/item_2"
+        android:title="나가기"
+        android:icon="@drawable/ic_exit_24"/>
+
+</menu>

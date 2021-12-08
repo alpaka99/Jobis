@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/item_calendar"
+        android:enabled="true"
+        android:icon="@drawable/ic_calendar"
+        android:title="캘린더"/>
+    <item
+        android:id="@+id/item_study"
+        android:enabled="true"
+        android:icon="@drawable/ic_study"
+        android:title="스터디"/>
+    <item
+        android:id="@+id/item_job"
+        android:enabled="true"
+        android:icon="@drawable/ic_job"
+        android:title="잡"/>
+    <item
+        android:id="@+id/item_community"
+        android:enabled="true"
+        android:icon="@drawable/ic_community"
+        android:title="커뮤니티"/>
+    <item
+        android:id="@+id/item_my_page"
+        android:enabled="true"
+        android:icon="@drawable/ic_mypage"
+        android:title="마이"/>
+</menu>

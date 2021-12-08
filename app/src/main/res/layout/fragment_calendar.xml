@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendar_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/calendar_border"
+        app:mcv_selectionColor="@color/secondary_light"
+        app:mcv_weekDayLabels="@array/weekdays_custom" />
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/calendar_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/calendar_view"
+        android:orientation="horizontal" />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/calendar_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_add_24"
+        app:tint="@android:color/white"
+        android:layout_alignBottom="@+id/calendar_view"
+        android:layout_alignEnd="@+id/calendar_view"
+        app:borderWidth="0dp"
+        android:backgroundTint="#3f51b5" />
+</RelativeLayout>

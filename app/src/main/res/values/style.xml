@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 시간 -->
+    <style name="MyTimePickerTheme" parent="android:Widget.Material.TimePicker">
+        <item name="android:timePickerMode">spinner</item>
+<!--        <item name="android:headerBackground">@color/primary</item>-->
+<!--        <item name="android:textColor">@color/primary</item>-->
+<!--        <item name="android:buttonBarNegativeButtonStyle">@style/TimePickerButtonText</item>-->
+<!--        <item name="android:buttonBarPositiveButtonStyle">@style/TimePickerButtonText</item>-->
+<!--        <item name="android:buttonBarPositiveButtonStyle">@style/PickerButtonStyle</item>-->
+<!--        <item name="android:buttonBarNegativeButtonStyle">@style/PickerButtonStyle</item>-->
+       <item name="android:colorPrimary">@style/oMyGOD</item>
+    </style>
+
+    <style name="oMyGOD" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="android:colorPrimary">@color/black</item>
+
+    </style>
+
+    <!-- 달력 -->
+    <style name="MyDatePickerDialogTheme" parent="Theme.AppCompat.Light.Dialog">
+        <!--선택된 날짜의 동그라미 색상-->
+        <item name="colorAccent">@color/primary_dark</item>
+        <!--달력 헤더 / headerBackground 로도 적용 가능-->
+        <item name="android:colorAccent">@color/primary</item>
+        <!--버튼-->
+        <item name="android:buttonBarPositiveButtonStyle">@style/PickerButtonStyle</item>
+        <item name="android:buttonBarNegativeButtonStyle">@style/PickerButtonStyle</item>
+    </style>
+
+    <!-- 버튼-->
+    <style name="PickerButtonStyle" parent="Base.Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:backgroundTint">@color/white</item>
+    </style>
+
+    <style name="TimePickerButtonText" parent="Widget.AppCompat.Button.ButtonBar.AlertDialog">
+        <item name="android:textColor">@android:color/holo_red_light</item>
+    </style>
+
+<!--    <style name="themeOnverlay_timePicker" parent="@style/ThemeOverlay.MaterialComponents.Dialog">-->
+<!--        <item name="colorControlActivated">@color/black</item>-->
+<!--        <item name="colorAccent">@color/light_gray</item>-->
+<!--        <item name="android:textColorPrimary">@color/primary_light</item>-->
+<!--        <item name="android:textColorSecondary">#cfcf66</item>-->
+<!--    </style>-->
+
+</resources>

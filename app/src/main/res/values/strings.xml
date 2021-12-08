@@ -1,0 +1,124 @@
+<resources>
+    <string name="app_name">Jobis</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">이메일이 정확하지 않습니다.</string>
+    <string name="invalid_password">비밀번호를 6자리 이상 입력해주세요.</string>
+    <string name="login_failed">"로그인 실패"</string>
+    <string name="signup_failed">"이미 존재하는 이메일입니다."</string>
+    <string name="invalid_nickname">닉네임을 빈 칸을 제외하고 두자리 이상 입력해주세요.</string>
+    <string name="invalid_password_comfirmation">비밀번호가 일치하지 않습니다.</string>
+
+    <!-- Calendar-->
+    <string name="sunday"><font color="#D0312D">일</font></string>
+    <string name="saturday"><font color="#3944BC">토</font></string>
+    <string name="color_dialog_title">색상</string>
+    <string name="select">선택</string>
+    <string name="custom">커스텀</string>
+    <string name="presets">이전</string>
+    <array name="weekdays_custom">
+        <item>@string/sunday</item>
+        <item>월</item>
+        <item>화</item>
+        <item>수</item>
+        <item>목</item>
+        <item>금</item>
+        <item>@string/saturday</item>
+    </array>
+
+    <string-array name="dayOfWeek">
+        <item>일요일</item>
+        <item>월요일</item>
+        <item>화요일</item>
+        <item>수요일</item>
+        <item>목요일</item>
+        <item>금요일</item>
+        <item>토요일</item>
+    </string-array>
+
+    <string-array name="routine">
+        <item>단일 일정</item>
+        <item>반복 일정</item>
+    </string-array>
+
+
+    <string-array name="post_category">
+        <item>전체</item>
+        <item>경영/사무</item>
+        <item>마케팅/광고</item>
+        <item>유통/물류</item>
+        <item>영업</item>
+        <item>IT</item>
+        <item>생산/제조</item>
+        <item>연구개발/설계</item>
+        <item>전문직</item>
+        <item>디자인/미디어</item>
+        <item>건설</item>
+        <item>서비스</item>
+        <item>기타</item>
+    </string-array>
+
+    <string name="empty_title">제목을 입력해주세요</string>
+    <string name="empty_content">내용을 입력해주세요</string>
+    <string name="day_select_error1">시작일이 종료일보다 늦습니다</string>
+    <string name="day_select_error2">시작일과 종료일이 같습니다</string>
+    <string name="time_select_error">시작 시간이 종료 시간보다 늦습니다</string>
+    <string name="empty_routine_select">선택된 날짜가 없습니다.\n기간과 요일을 확인해주세요.</string>
+
+
+    <string name="create_study_upperbar">스터디 생성</string>
+    <string name="create_study_title">제목</string>
+    <string name="create_study_describe">설명</string>
+    <string name="create_study_submit">만들기</string>
+
+    <string-array name="study_region">
+        <item>서울</item>
+        <item>부산</item>
+        <item>인천</item>
+        <item>대구</item>
+        <item>대전</item>
+        <item>광주</item>
+        <item>수원</item>
+        <item>울산</item>
+        <item>그 외</item>
+    </string-array>
+
+    <string-array name="study_topic">
+        <item>전체</item>
+        <item>경영/사무</item>
+        <item>마케팅/광고</item>
+        <item>유통/물류</item>
+        <item>영업</item>
+        <item>IT</item>
+        <item>생산/제조</item>
+        <item>연구개발/설계</item>
+        <item>전문직</item>
+        <item>디자인/미디어</item>
+        <item>건설</item>
+        <item>서비스</item>
+        <item>기타</item>
+    </string-array>
+
+    <string-array name="study_population">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+
+    <string name="search_activity_name">StudySearch</string>
+    <string name="search_upper_bar">검색</string>
+</resources>

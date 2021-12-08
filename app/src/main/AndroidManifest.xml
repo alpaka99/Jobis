@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.ssafy.jobis">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SCHEDULE_EXACT_ALARM" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name = "android.permission.VIBRATE"/>
+
+    <application
+        android:name=".presentation.login.Jobis"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_main"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_main_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.Light.NoActionBar">
+        <activity
+            android:name=".presentation.admin.AdminActivity"
+            android:screenOrientation="portrait"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.chat.ChatScheduleAddActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Jobis.chat"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.chat.ChatScheduleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Jobis.chat"
+            android:exported="false" />
+        <activity
+            android:name=".presentation.community.search.CommunitySearchActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Jobis.chat"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.community.detail.CommunityDetailActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Jobis.chat"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".presentation.study.CreateStudy"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:theme="@style/Theme.Jobis.chat"
+            android:windowSoftInputMode="adjustNothing" />
+        <activity
+            android:name=".presentation.study.SearchStudy"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Jobis.chat"
+            android:exported="true" />
+        <activity
+            android:name=".presentation.MainActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing"
+            android:theme="@style/Theme.Jobis.chat"/>
+        <activity
+            android:name=".presentation.login.UserActivity"
+            android:screenOrientation="portrait"
+            android:exported="true"
+            android:windowSoftInputMode="adjustNothing">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".presentation.calendar.CalendarScheduleActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Jobis"
+            android:windowSoftInputMode="adjustNothing"
+            />
+        <activity android:name=".presentation.chat.ChatActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.Jobis.chat"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+
+        <service
+            android:name=".presentation.chat.MyFCMService"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <receiver android:name=".presentation.calendar.AlarmReceiver" />
+    </application>
+
+</manifest>

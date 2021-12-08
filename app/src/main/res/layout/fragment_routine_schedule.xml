@@ -1,0 +1,323 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        >
+
+        <Button
+            android:id="@+id/dayOfWeek1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/schedule_day_of_week_btn"
+            app:backgroundTint = "@null"
+            android:text="일"
+            android:padding="0dp"
+            android:layout_marginVertical="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="5dp"/>
+        <Button
+            android:id="@+id/dayOfWeek2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:text="월"
+            android:textColor="@color/black"
+            android:background="@drawable/schedule_day_of_week_btn"
+            app:backgroundTint = "@null"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="0dp"
+            android:paddingRight="0dp"
+            android:layout_marginVertical="1dp"
+            android:layout_marginHorizontal="5dp" />
+        <Button
+            android:id="@+id/dayOfWeek3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/schedule_day_of_week_btn"
+            app:backgroundTint = "@null"
+            android:text="화"
+            android:padding="0dp"
+            android:layout_marginVertical="1dp"
+            android:layout_marginHorizontal="5dp"/>
+        <Button
+            android:id="@+id/dayOfWeek4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/schedule_day_of_week_btn"
+            app:backgroundTint = "@null"
+            android:text="수"
+            android:padding="0dp"
+            android:layout_marginVertical="1dp"
+            android:layout_marginHorizontal="5dp"/>
+        <Button
+            android:id="@+id/dayOfWeek5"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/schedule_day_of_week_btn"
+            app:backgroundTint = "@null"
+            android:text="목"
+            android:padding="0dp"
+            android:layout_marginVertical="1dp"
+            android:layout_marginHorizontal="5dp"/>
+        <Button
+            android:id="@+id/dayOfWeek6"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/schedule_day_of_week_btn"
+            app:backgroundTint = "@null"
+            android:text="금"
+            android:padding="0dp"
+            android:layout_marginVertical="1dp"
+            android:layout_marginHorizontal="5dp"/>
+        <Button
+            android:id="@+id/dayOfWeek7"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:textColor="@color/black"
+            android:background="@drawable/schedule_day_of_week_btn"
+            app:backgroundTint = "@null"
+            android:text="토"
+            android:padding="0dp"
+            android:layout_marginVertical="1dp"
+            android:layout_marginHorizontal="5dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/startDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="3dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="기간"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"/>
+        <Button
+            android:id="@+id/startDateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+            android:drawableTint="@color/black"
+            android:text="날짜"
+            android:textColor="@color/black"
+            android:background="@drawable/calendar_detail_button"
+            app:backgroundTint = "@null"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_margin="1dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="5dp"
+            />
+        <Button
+            android:id="@+id/endDateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_baseline_calendar_today_24"
+            android:drawableTint="@color/black"
+            android:text="날짜"
+            android:textColor="@color/black"
+            android:background="@drawable/calendar_detail_button"
+            app:backgroundTint = "@null"
+            android:minHeight="0dp"
+            android:minWidth="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_margin="1dp"/>
+
+
+    </LinearLayout>
+<!--    <LinearLayout-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="10dp">-->
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="종료"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:layout_marginRight="10dp"-->
+<!--            />-->
+<!--        <Button-->
+<!--            android:id="@+id/endDateBtn"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:drawableLeft="@drawable/ic_baseline_calendar_today_24"-->
+<!--            android:drawableTint="@color/black"-->
+<!--            android:text="날짜"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:background="@drawable/calendar_detail_button"-->
+<!--            app:backgroundTint = "@null"-->
+<!--            android:minHeight="0dp"-->
+<!--            android:minWidth="0dp"-->
+<!--            android:paddingTop="0dp"-->
+<!--            android:paddingBottom="0dp"-->
+<!--            android:paddingLeft="8dp"-->
+<!--            android:paddingRight="8dp"-->
+<!--            android:layout_marginRight="10dp"/>-->
+
+<!--    </LinearLayout>-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간"
+            android:textColor="@color/black"
+            android:layout_marginRight="10dp"
+            />
+        <Button
+            android:id="@+id/startTimeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_access_time_24"
+            android:drawableTint="@color/black"
+            android:background="@drawable/calendar_detail_button"
+            app:backgroundTint="@null"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_margin="1dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="~"
+            android:layout_marginHorizontal="5dp"/>
+        <Button
+            android:id="@+id/endTimeBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시간"
+            android:textColor="@color/black"
+            android:drawableLeft="@drawable/ic_baseline_access_time_24"
+            android:drawableTint="@color/black"
+            android:background="@drawable/calendar_detail_button"
+            app:backgroundTint="@null"
+            android:minWidth="0dp"
+            android:minHeight="0dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:layout_margin="1dp"/>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/scheduleTitleEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:inputType="textWebEditText"
+        android:hint="일정을 입력하세요"
+        android:privateImeOptions="defaultInputmode=korea"
+
+        />
+    <EditText
+        android:id="@+id/scheduleContentEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:lines="15"
+        android:minLines="2"
+        android:maxLines="20"
+        android:scrollbars="vertical"
+        android:hint="내용을 입력하세요"
+        android:gravity="top"
+        android:privateImeOptions="defaultInputmode=korean"/>
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/filledTextField"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="일정"-->
+<!--        android:backgroundTint="@null"-->
+<!--        app:boxBackgroundColor="@color/white"-->
+<!--        app:endIconMode="clear_text"-->
+<!--        >-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/scheduleTitleEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+<!--    <com.google.android.material.textfield.TextInputLayout-->
+<!--        android:id="@+id/filledTextField2"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:hint="내용"-->
+<!--        app:boxBackgroundColor="@color/white"-->
+
+
+<!--        >-->
+
+<!--        <com.google.android.material.textfield.TextInputEditText-->
+<!--            android:id="@+id/scheduleContentEditText"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:inputType="textMultiLine"-->
+<!--            android:lines="3"-->
+<!--            android:gravity="top"-->
+<!--            android:overScrollMode="always"-->
+<!--            android:scrollbars="vertical"-->
+<!--            android:scrollbarStyle="insideInset"-->
+<!--            android:scrollHorizontally="false"-->
+<!--            app:endIconMode="clear_text"-->
+<!--            android:windowSoftInputMode="adjustResize"-->
+<!--            />-->
+
+<!--    </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    <Button-->
+<!--        android:id="@+id/routineScheduleAddBtn"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="일정 등록(임시)"/>-->
+<!--    <Button-->
+<!--        android:id="@+id/routineScheduleList"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="일정 확인(임시)"-->
+<!--        />-->
+</LinearLayout>
+
+
+
+

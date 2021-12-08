@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fui_ic_anonymous_white_24dp"
+    tools:context=".presentation.myPage.MyPageFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/linearLayout2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:gravity="center_vertical"
+                android:text="Jobis"
+                android:textColor="@color/primary"
+                android:textSize="24sp" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/adminButton"
+                style="@style/Widget.MaterialComponents.Button.TextButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Admin"
+                android:textColor="@color/secondary"
+                android:textSize="16sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/myInfoLayer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="16dp"
+            android:background="@drawable/box_border"
+            android:minHeight="100dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/myImageView"
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:src="@drawable/fui_ic_anonymous_white_24dp"
+                app:civ_circle_background_color="@color/light_gray" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginStart="15dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/myPageNickNameTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-black"
+                    android:text="닉네임"
+                    android:textSize="24sp" />
+
+
+                <!--                <LinearLayout-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:orientation="horizontal">-->
+
+                <!--                    <ImageButton-->
+                <!--                        android:id="@+id/imageButton4"-->
+                <!--                        android:layout_width="30dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:layout_marginLeft="10dp"-->
+                <!--                        android:layout_marginRight="10dp"-->
+                <!--                        android:background="@drawable/icons8_setting_64"-->
+                <!--                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />-->
+
+                <!--                    <ImageButton-->
+                <!--                        android:id="@+id/imageButton5"-->
+                <!--                        android:layout_width="30dp"-->
+                <!--                        android:layout_height="30dp"-->
+                <!--                        android:background="@drawable/icons8_alarm_64"-->
+                <!--                        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />-->
+
+                <!--                </LinearLayout>-->
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/nickNameEditButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#00FFFFFF"
+                android:minWidth="30dp"
+                android:minHeight="30dp"
+                android:src="@drawable/icons8_edit_24"
+                tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:gravity="right"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/logoutButton"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/icons8_logout_58"
+                    android:textSize="12sp"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/myDeleteButton"
+                    style="@style/Widget.MaterialComponents.Button.TextButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:minWidth="40dp"
+                    android:minHeight="48dp"
+                    android:text="회원탈퇴"
+                    android:textColor="@color/light_gray"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.skydoves.expandablelayout.ExpandableLayout
+            android:id="@+id/jobExpandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:expandable_duration="300"
+            app:expandable_isExpanded="false"
+            app:expandable_parentLayout="@layout/job_toggle_button"
+            app:expandable_secondLayout="@layout/mypage_recycler" />
+        <com.skydoves.expandablelayout.ExpandableLayout
+            android:id="@+id/likeExpandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:expandable_duration="300"
+            app:expandable_isExpanded="false"
+            app:expandable_parentLayout="@layout/like_toggle_button"
+            app:expandable_secondLayout="@layout/mypage_recycler" />
+        <com.skydoves.expandablelayout.ExpandableLayout
+            android:id="@+id/postExpandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:expandable_duration="300"
+            app:expandable_isExpanded="false"
+            app:expandable_parentLayout="@layout/post_toggle_button"
+            app:expandable_secondLayout="@layout/mypage_recycler" />
+        <com.skydoves.expandablelayout.ExpandableLayout
+            android:id="@+id/commentExpandableLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            app:expandable_duration="300"
+            app:expandable_isExpanded="false"
+            app:expandable_parentLayout="@layout/comment_toggle_button"
+            app:expandable_secondLayout="@layout/mypage_recycler" />
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ToggleButton-->
+<!--                android:id="@+id/jobToggleButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/primary"-->
+<!--                android:drawableEnd="@drawable/toggle_button"-->
+<!--                android:fontFamily="@font/comfortaa_bold"-->
+<!--                android:padding="10dp"-->
+<!--                android:shadowColor="#191616"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textOff="마감이 다가오는 공고"-->
+<!--                android:textOn="마감이 다가오는 공고"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/myJobRecyclerView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:orientation="vertical">-->
+<!--            <ToggleButton-->
+<!--                android:id="@+id/likeToggleButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/primary"-->
+<!--                android:drawableEnd="@drawable/toggle_button"-->
+<!--                android:fontFamily="@font/comfortaa_bold"-->
+<!--                android:padding="10dp"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textOff="내가 좋아요 한 글"-->
+<!--                android:textOn="내가 좋아요 한 글"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/myLikeRecyclerView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone" />-->
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <ToggleButton-->
+<!--                android:id="@+id/postToggleButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/primary"-->
+<!--                android:drawableEnd="@drawable/toggle_button"-->
+<!--                android:fontFamily="@font/comfortaa_bold"-->
+<!--                android:padding="10dp"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textOff="내가 쓴 글"-->
+<!--                android:textOn="내가 쓴 글"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/myPostRecyclerView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone" />-->
+
+<!--        </LinearLayout>-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_marginBottom="10dp"-->
+<!--            android:orientation="vertical">-->
+<!--            <ToggleButton-->
+<!--                android:id="@+id/commentToggleButton"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:background="@color/primary"-->
+<!--                android:drawableEnd="@drawable/toggle_button"-->
+<!--                android:fontFamily="@font/comfortaa_bold"-->
+<!--                android:padding="10dp"-->
+<!--                android:textAppearance="@style/TextAppearance.AppCompat.Body1"-->
+<!--                android:textColor="@color/white"-->
+<!--                android:textOff="내가 쓴 댓글"-->
+<!--                android:textOn="내가 쓴 댓글"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <androidx.recyclerview.widget.RecyclerView-->
+<!--                android:id="@+id/myCommentRecyclerView"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:visibility="gone" />-->
+<!--        </LinearLayout>-->
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

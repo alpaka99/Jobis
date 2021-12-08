@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/primary"
+    android:fontFamily="@font/comfortaa_bold"
+    android:padding="10dp"
+    android:shadowColor="#191616"
+    android:textColor="@color/white"
+    android:textSize="14sp"
+    android:text="내가 쓴 글"
+    tools:ignore="SpeakableTextPresentCheck">
+
+</Button>
